@@ -6,12 +6,14 @@ import Footer from './components/Footer'
 import {BrowserRouter, Routes, Route} from 'react-router'
 import Registration from './components/Registration'
 import Login from './components/Login'
+import AuthProvider from './AuthProvider'
 
 function App() {
   
 
   return ( // Method to Create the Routes By using (Route Tag) placed inside (BrowserRouter)
     <>
+    <AuthProvider>
        <BrowserRouter>
        <Header/>  
         <Routes>
@@ -21,7 +23,7 @@ function App() {
         </Routes>
         <Footer/>
        </BrowserRouter>
-       
+       </AuthProvider>
     </>
   )
 }
