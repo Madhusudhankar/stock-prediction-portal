@@ -1,22 +1,23 @@
+
+
 import React from 'react'
-import Button from './Button'
 import Header from './Header'
 import Footer from './Footer'
+import Button from './Button'
 
 const Main = () => {
   return (
     <>
     
-       <div className='container'>
+    <div className="container">
         <div className='p-5 text-center bg-light-dark rounded'>
-        <div className='text-light '> Stock Prediction Portal</div>
-        <p className='text-light lead'> This Stock Prediction application utilizes Machine Learning Techniques and LSTMModel integrated with Django framework.It forecasts future Stock Prices by Analizing 100-day and 200-day moving Average.</p>
-         <Button text='Login' class='btn-outline-warning'/>
-           
-           </div>
-
-       </div>
-       
+            <h1 className='text-light'>Stock Prediction App</h1>
+            <p className="lead text-light">This stock prediction application utilizes machine learning techniques, specifically employing Keras, and LSTM model, integrated within the Django framework. It forecasts future stock prices by analyzing 100-day and 200-day moving averages, essential indicators widely used by stock analysts to inform trading and investment decisions.</p>
+            <Button text="Explore Now" class="btn-info" url="/dashboard" />
+        </div>
+    </div>
+    
+    
     </>
   )
 }
